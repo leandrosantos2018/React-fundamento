@@ -4,7 +4,7 @@ export default props =>{
 
     return (
         <div>
-        {props.nome} <strong>Santos</strong>
+        {props.nome} <strong>{props.sobrenome}</strong>
         </div>
     )
 }

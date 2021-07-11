@@ -12,12 +12,12 @@ export default (props) => {
 
     return (
         <div className='App'>
-            <h1>Fundamento React</h1>
+            <h1>Fundamentos React</h1>
            
            <div className="Cards">
                
            <Card titulo="#05 -Componente com filhos" color='#34FA9F'>
-                <Familia />
+                <Familia sobrenome='Ferreira' />
             </Card>
             
                
