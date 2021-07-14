@@ -4,8 +4,11 @@ import Aleatorio from './basicos/Aleatorio'
 import Card from './Layout/Card'
 import ComParametro from './basicos/ComParamentro'
 import Familia from './basicos/Familia';
+import FamiliaMembro from './basicos/FamiliaMembro';
 import Fragmento from './basicos/Fragmento'
+import ListaAluno from './Repeticao/ListaAluno';
 import Primeiro from './basicos/Primeiro'
+import Produtos from './Repeticao/Produtos'
 import React from 'react'
 
 export default (props) => {
@@ -13,11 +16,26 @@ export default (props) => {
     return (
         <div className='App'>
             <h1>Fundamentos React</h1>
-           
-           <div className="Cards">
+
+             <div className="Cards">
+
+             <Card titulo="#07 - Repetição Desafio" color='yellow'>
+                
+                <Produtos />             
+            </Card>
                
+           <Card titulo="#06 - Repetição" color='blue'>
+                
+                <ListaAluno/>              
+            </Card>
+           
            <Card titulo="#05 -Componente com filhos" color='#34FA9F'>
                 <Familia sobrenome='Ferreira' />
+                <FamiliaMembro nome='Leandro' />               
+                <FamiliaMembro nome='Naiani'/>
+                <FamiliaMembro nome='Mirella'/>
+            
+               
             </Card>
             
                
@@ -36,10 +54,7 @@ export default (props) => {
             <Card titulo="#01 - Primeiro"color='#DAFB01'>
                 <Primeiro />
             </Card>
-
-
-        </div>
-
             </div>
+        </div>
     );
 }
