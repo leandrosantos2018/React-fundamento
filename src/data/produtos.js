@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
     
         {id:1 , nome:'laranja' ,preco:2.50},

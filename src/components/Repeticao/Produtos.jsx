@@ -8,10 +8,10 @@ export default props => {
 
         function getLinhas() {
 
-            return produtos.map(produto => {
+            return produtos.map((produto, i) => {
                 return (
-                    <tr>
-                        <td className="id">{produto.id}</td>
+                    <tr key={produto.id}className={i % 2 == 0 ? 'Par' : ''}>
+                        <td>{produto.id}</td>
                         <td>{produto.nome}</td>
                         <td>R${produto.preco}</td>
                     </tr>

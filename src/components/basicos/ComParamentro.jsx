@@ -11,7 +11,7 @@ export default function ComParametro(props){
 
             <p>{props.aluno} tem nota <strong> { props.nota  }  </strong>
             
-            e foi <strong> { status }</strong> !
+            e está <strong> { status }</strong> !
             </p>
         </div>
     )

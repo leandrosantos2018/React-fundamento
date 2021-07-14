@@ -1,16 +1,19 @@
 import './App.css';
 
 import Aleatorio from './basicos/Aleatorio'
-import Card from './Layout/Card'
-import ComParametro from './basicos/ComParamentro'
+import Card from './Layout/Card';
+import ComParametro from './basicos/ComParamentro';
 import Familia from './basicos/Familia';
 import FamiliaMembro from './basicos/FamiliaMembro';
-import Fragmento from './basicos/Fragmento'
+import Fragmento from './basicos/Fragmento';
 import ListaAluno from './Repeticao/ListaAluno';
-import Primeiro from './basicos/Primeiro'
-import Produtos from './Repeticao/Produtos'
+import ParOuImpar from './Condicional/ParOuImpar';
+import Primeiro from './basicos/Primeiro';
+import Produtos from './Repeticao/Produtos';
 import React from 'react'
+import UsuarioInfo from './Condicional/UsuarioInfo';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => {
 
     return (
@@ -19,11 +22,19 @@ export default (props) => {
 
              <div className="Cards">
 
-             <Card titulo="#07 - Repetição Desafio" color='yellow'>
+            
+             <Card titulo="#08 - Condicional" color='#6495ED'>
+                
+                <ParOuImpar numero={20}/> 
+
+                <UsuarioInfo usuario={{nome:'Leandro'}}/>            
+                <UsuarioInfo usuario={{email:'leleuramos@gmail.com'}}/>            
+                </Card>
+             <Card titulo="#07 - Repetição Desafio" color='#C0C0C0'>
                 
                 <Produtos />             
             </Card>
-               
+
            <Card titulo="#06 - Repetição" color='blue'>
                 
                 <ListaAluno/>              
