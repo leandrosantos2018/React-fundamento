@@ -3,7 +3,7 @@ import React from "react"
 export default function ComParametro(props){
 
     const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação'
-    const notaInt = Math.ceil(props.nota)
+   // const notaInt = Math.ceil(props.nota)
   
     return (
         <div >
