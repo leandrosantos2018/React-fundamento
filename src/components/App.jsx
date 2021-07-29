@@ -3,6 +3,8 @@ import './App.css';
 import Aleatorio from './basicos/Aleatorio'
 import Card from './Layout/Card';
 import ComParametro from './basicos/ComParamentro';
+import DiretaFilho from './comunicacao/DiretaFilho';
+import DiretaPai from './comunicacao/DiretaPai';
 import Familia from './basicos/Familia';
 import FamiliaMembro from './basicos/FamiliaMembro';
 import Fragmento from './basicos/Fragmento';
@@ -19,16 +21,24 @@ export default (props) => {
     return (
         <div className='App'>
             <h1>Fundamentos React</h1>
+            
 
-             <div className="Cards">
+              <div className="Cards">
+
+            
+             <Card titulo="#09 - Comunicação Direta" color='#6495ED'>
+                 <DiretaPai/>
+                 
+             </Card>
+            
 
             
              <Card titulo="#08 - Condicional" color='#6495ED'>
                 
                 <ParOuImpar numero={20}/> 
 
-                <UsuarioInfo usuario={{nome:'Leandro'}}/>            
-                <UsuarioInfo usuario={{email:'leleuramos@gmail.com'}}/>            
+                <UsuarioInfo usuario = {{nome: ''}}/>            
+                          
                 </Card>
              <Card titulo="#07 - Repetição Desafio" color='#C0C0C0'>
                 

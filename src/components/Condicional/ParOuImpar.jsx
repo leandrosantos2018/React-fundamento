@@ -6,8 +6,7 @@ export default props => {
     return (
         <div>
             
-            {isPAr ? 
-            <span>Par</span> : 
+            {isPAr ?  <span>Par</span> : 
             <span>Impar</span> 
             }
   
