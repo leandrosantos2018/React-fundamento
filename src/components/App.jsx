@@ -8,6 +8,7 @@ import DiretaPai from './comunicacao/DiretaPai';
 import Familia from './basicos/Familia';
 import FamiliaMembro from './basicos/FamiliaMembro';
 import Fragmento from './basicos/Fragmento';
+import IndiretaPai from './comunicacao/IndiretaPai';
 import ListaAluno from './Repeticao/ListaAluno';
 import ParOuImpar from './Condicional/ParOuImpar';
 import Primeiro from './basicos/Primeiro';
@@ -24,6 +25,18 @@ export default (props) => {
             
 
               <div className="Cards">
+
+
+                      
+              <Card titulo="#10 - Comunicação Indireta" color='#00FFFF'>
+                 <IndiretaPai/>
+                 
+             </Card>
+                    
+             <Card titulo="#09 - Comunicação Direta" color='#6495ED'>
+                 <DiretaPai/>
+                 
+             </Card>
 
             
              <Card titulo="#09 - Comunicação Direta" color='#6495ED'>

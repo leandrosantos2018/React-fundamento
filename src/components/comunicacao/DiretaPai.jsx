@@ -7,6 +7,7 @@ export default props => {
     return (
         <div>
             <DiretaFilho texto="Filho 1 " numero ={20} boll={true}></DiretaFilho>
+            <DiretaFilho texto="Filho 2 " numero ={20} boll={true}></DiretaFilho>
         </div> 
     )
 
